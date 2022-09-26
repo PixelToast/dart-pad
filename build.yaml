@@ -17,8 +17,8 @@ targets:
           - --fast-startup
           - --minify
           - --no-source-maps
-          - -DSERVER_URL=http://tst.sh:8082/
-          - -DSTABLE_SERVER_URL=http://tst.sh:8082/
+          - -DSERVER_URL=https://api.dartpad.boxy.wiki/
+          - -DSTABLE_SERVER_URL=https://api.dartpad.boxy.wiki/
 
       json_serializable:
         # Ignore workshop samples.
