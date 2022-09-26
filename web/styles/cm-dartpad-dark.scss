@@ -18,23 +18,23 @@
 .cm-s-darkpad .CodeMirror-cursor { border-left: 1px solid white; }
 .cm-s-darkpad .CodeMirror-cursors.CodeMirror-overwrite .CodeMirror-cursor { margin-top: 2px; width: auto; border-left: none; background-color: rgba(255,255,255,0.7); }
 .cm-s-darkpad { background-color: $dark-code-background-color; color: $dark-editor-text; }
-.cm-s-darkpad span.cm-builtin { color: $dark-editor-text; }
-.cm-s-darkpad span.cm-comment { color: $dark-comment; }
-.cm-s-darkpad span.cm-keyword { color: $dark-green;}
-.cm-s-darkpad span.cm-atom { color: $dark-orange; }
-.cm-s-darkpad span.cm-variable { color: $dark-blue; }
-.cm-s-darkpad span.cm-variable-2 { color: $dark-orange;}
-.cm-s-darkpad span.cm-string { color: $dark-pink; }
-.cm-s-darkpad span.cm-string-2 { color: $dark-pink-2; }
-.cm-s-darkpad span.cm-number { color: $dark-teal; }
-.cm-s-darkpad span.cm-attribute { color: $dark-blue; }
-.cm-s-darkpad span.cm-qualifier { color: $dark-orange-2; }
+.cm-s-darkpad span.cm-builtin { color: #FF6188; }
+.cm-s-darkpad span.cm-comment { color: #75715e; }
+.cm-s-darkpad span.cm-keyword { color: #FF6188;}
+.cm-s-darkpad span.cm-atom { color: #AB9DF2; }
+.cm-s-darkpad span.cm-variable { color: #F59762; }
+.cm-s-darkpad span.cm-variable-2 { color: #A9DC76;}
+.cm-s-darkpad span.cm-string { color: #FFD866; }
+.cm-s-darkpad span.cm-string-2 { color: #FFD866; }
+.cm-s-darkpad span.cm-number { color: #AB9DF2; }
+.cm-s-darkpad span.cm-attribute { color: #F59762; }
+.cm-s-darkpad span.cm-qualifier { color: #F59762; }
 .cm-s-darkpad span.cm-meta { color: $dark-teal; }
-.cm-s-darkpad span.cm-header { color: $dark-blue; }
+.cm-s-darkpad span.cm-header { color: $dark-editor-text; }
 .cm-s-darkpad span.cm-operator { color: $dark-editor-text; }
 .cm-s-darkpad span.cm-def { color: $dark-editor-text; }
-.cm-s-darkpad span.cm-tag { color: $dark-green; }
-.cm-s-darkpad span.cm-property { color: $dark-red; }
+.cm-s-darkpad span.cm-tag { color: #f92672; }
+.cm-s-darkpad span.cm-property { color: #F59762; }
 
 .CodeMirror-simplescroll-horizontal div, .CodeMirror-simplescroll-vertical div {
   background: $dark-scrollbar-color;

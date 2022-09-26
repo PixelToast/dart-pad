@@ -57,7 +57,8 @@
 <header class="mdc-elevation--z4">
     <div class="header-title">
         <img src="dart-192.png" alt="DartPad Logo" class="logo"/>
-        <span>DartPad</span>
+        <span>DartPad&nbsp;&nbsp;</span>
+        <span style="font-size: 11pt; color: #FF6188">Boxy Edition</span>
     </div>
     <div class="header-actions">
         <button type="button" id="new-button" class="mdc-button">
@@ -72,7 +73,7 @@
             <i class="material-icons mdc-button__icon">format_align_left</i>
             Format
         </button>
-        <button type="button" id="install-button" class="mdc-button">
+        <button style="display: none" type="button" id="install-button" class="mdc-button">
             <i class="material-icons mdc-button__icon">get_app</i>
             Install SDK
         </button>
@@ -80,7 +81,7 @@
     <div id="header-name-holder"><div class="header-gist-name"></div>
         <span id="unsaved-local-edit" title="Login to GitHub to save as gist" hidden>local edits</span>
         <span id="gist_star_button" title="Star this gist" hidden><i id="gist_star_inner_icon" class="material-icons mdc-button__icon" aria-hidden="true">star_outline</i></span></div>
-    <div>
+    <div style="display: none">
         <button type="button" id="samples-dropdown-button" class="mdc-button">
             <span class="mdc-button__label">Samples</span>
             <i class="material-icons mdc-button__icon" aria-hidden="true">expand_more</i>
@@ -104,7 +105,7 @@
         <div id="my-gists-menu" class="mdc-menu mdc-menu-surface"></div>
     </div>
     <div>
-        <button id="github-menu-button" class="github-menu-icon mdc-icon-button">
+        <button id="github-menu-button" class="github-menu-icon mdc-icon-button" style="display: none">
             <img id="github-avatar"/>
         </button>
         <div id="github-menu" class="mdc-menu mdc-menu-surface">
@@ -382,13 +383,7 @@
 <footer>
     <i id="keyboard-button" class="material-icons footer-item" aria-hidden="true">keyboard</i>
     <div class="footer-item">
-        <a href="https://dart.dev/tools/dartpad/privacy"
-           target="repo" class="footer-item">Privacy notice</a>
-        <a href="https://github.com/dart-lang/dart-pad/issues"
-           target="repo">Send feedback</a>
-    </div>
-    <div class="footer-item">
-        <div id="channel-switch">
+        <div id="channel-switch" style="display: none">
             <button type="button" id="channels-dropdown-button" class="mdc-button mdc-button-footer">
                 <span class="mdc-button__label">Channel</span>
                 <i class="material-icons mdc-button__icon" aria-hidden="true">expand_more</i>
@@ -399,7 +394,10 @@
     <div class="flex"></div>
     <div id="issues-message" class="info-message"></div>
     <a id="issues-toggle" hidden></a>
-    <div id="dartpad-version"></div>
+    <img src="dart-32.png" width="16px" alt="DartPad Logo" class="logo" style="margin-left: 12px">
+    <div id="dartpad-dart-version"></div>
+    <img src="flutter.png" width="16px" alt="DartPad Logo" class="logo" style="margin-left: 8px">
+    <div id="dartpad-flutter-version"></div>
     <i id="dartpad-package-versions" class="material-icons" aria-hidden="true">info</i>
 </footer>
 

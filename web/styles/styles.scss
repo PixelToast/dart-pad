@@ -5,7 +5,7 @@
 
 // Material Design Web theme colors. Must be imported before importing
 // material-components-web.scss.
-$mdc-theme-primary: #168afd;
+$mdc-theme-primary: #FF6188;
 $mdc-theme-on-primary: #0e161f;
 $mdc-theme-secondary: #676767;
 $mdc-theme-background: $playground-header-background-color;
@@ -30,8 +30,8 @@ body {
 
 header {
   background-color: $playground-header-background-color;
-  height: 48px;
-  padding-left: 24px;
+  height: 24px;
+  padding: 8px 8px;
   @include layout-center;
   z-index: 4;
   user-select: none;
@@ -42,7 +42,8 @@ header {
     font-family: $google-sans;
     font-weight: 400;
     font-size: 16pt;
-    margin-right: 8px;
+    margin-right: 24px;
+    margin-left: 16px;
 
     img.logo {
       height: 24px;
@@ -54,20 +55,21 @@ header {
   .header-actions {
     @include layout-flex;
     @include layout-horizontal;
-    @include layout-center-justified;
     flex-shrink: 0 !important;
   }
 
+  .header-actions button {
+    margin-right: 8px;
+  }
+
   #header-name-holder {
-    @include layout-flex;
     @include layout-horizontal;
     @include layout-center-justified;
     @include layout-wrap;
     font-size: 14pt;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 8px;
+    margin-right: 8px;
     user-select: none;
-    flex-shrink: 1;
   }
 
   .header-gist-name {
@@ -179,7 +181,6 @@ a {
   @include layout-justified;
   @include layout-center;
   padding: 4px;
-  height: 48px;
 
 }
 

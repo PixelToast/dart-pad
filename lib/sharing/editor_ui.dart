@@ -242,10 +242,8 @@ abstract class EditorUi {
   Future<void> updateVersions() async {
     try {
       final response = await dartServices.version();
-      // "Based on Flutter 1.19.0-4.1.pre Dart SDK 2.8.4"
-      final versionText = 'Based on Flutter ${response.flutterVersion}'
-          ' Dart SDK ${response.sdkVersionFull}';
-      querySelector('#dartpad-version')!.text = versionText;
+      querySelector('#dartpad-flutter-version')!.text = response.flutterVersion;
+      querySelector('#dartpad-dart-version')!.text = response.sdkVersionFull;
       if (response.packageVersions.isNotEmpty) {
         _packageInfo.clear();
         _packageInfo.addAll(response.packageInfo);
@@ -302,10 +300,6 @@ class Channel {
 
   static const urlMapping = {
     'stable': stableServerUrl,
-    'beta': betaServerUrl,
-    'old': oldServerUrl,
-    'master': masterServerUrl,
-    'dev': devServerUrl,
   };
 
   Channel._({

@@ -9,7 +9,6 @@ library splitter;
 import 'dart:async';
 import 'dart:html';
 
-import 'package:meta/meta.dart';
 import 'package:js/js.dart';
 import 'package:js/js_util.dart' as js_util;
 

@@ -22,11 +22,11 @@ $light-squiggle-warning-color: #BF360C;
 $light-squiggle-info-color: #2C57A4;
 
 // Playground
-$playground-background-color: #0E161F;
-$playground-text-color: #fff;
-$playground-link-color: #ccc;
-$playground-header-background-color: #1c2834;
-$playground-footer-background-color: #27323a;
+$playground-background-color: #2D2A2E;
+$playground-text-color: #FCFCFA;
+$playground-link-color: #AB9DF2;
+$playground-header-background-color: #221f22;
+$playground-footer-background-color: #221f22;
 
 $light-button-color: #1967d2;
 $light-code-background-color: #fff;
@@ -44,7 +44,7 @@ $light-flash-error-color: #ffe7f8;
 $dark-code-background-color: $playground-background-color;
 $dark-busy-background-color: rgba(27, 29, 33, .8);
 $dark-secondary-background-color: $dark-code-background-color;
-$dark-gutter-background-color: $playground-header-background-color;
+$dark-gutter-background-color: #363337;
 $dark-border-color: $dark-gutter-background-color;
 $dark-issues-background-color: $playground-header-background-color;
 $dark-issue-label-color: #e6e6e6;
@@ -56,7 +56,7 @@ $dark-flash-error-color: #41333a;
 
 // V2 Colors
 $button-color: #1967D2;
-$button-text-color: #f8f9fa;
+$button-text-color: #FCFCFA;
 $secondary-color: #676767;
 $grey-1: #1c2834;
 $grey-2: #27323A;
@@ -70,7 +70,7 @@ $dark-orange: #FF916E;
 $dark-red: #FF2D64;
 $dark-pink-2: #FF00FA;
 $dark-orange-2: #FF9B00;
-$dark-editor-text: #FFFFFF;
+$dark-editor-text: #f8f8f2;
 $dark-comment: #909CC3;
 $dark-line-count: $dark-teal;
 $dark-gutter-line-number-color: $dark-teal;

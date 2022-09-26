@@ -995,7 +995,7 @@ class Playground extends EditorUi implements GistContainer, GistController {
   }
 
   void _showGitHubPage() {
-    window.location.href = 'https://github.com/dart-lang/dart-pad';
+    window.location.href = 'https://github.com/PixelToast/dart-pad';
   }
 
   void _showDartDevPage() {
