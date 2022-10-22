@@ -44,7 +44,7 @@ h1 {
 
 final String flutterCode = r'''
 import 'package:flutter/material.dart';
-import 'package:boxy/boxy.dart'
+import 'package:boxy/boxy.dart';
 
 const Color darkBlue = Color.fromARGB(255, 18, 32, 47);
 
