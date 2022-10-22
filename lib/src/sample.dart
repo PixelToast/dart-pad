@@ -44,6 +44,7 @@ h1 {
 
 final String flutterCode = r'''
 import 'package:flutter/material.dart';
+import 'package:boxy/boxy.dart'
 
 const Color darkBlue = Color.fromARGB(255, 18, 32, 47);
 
@@ -71,10 +72,23 @@ class MyApp extends StatelessWidget {
 class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Text(
-      'Hello, World!',
-      style: Theme.of(context).textTheme.headline4,
+    return CustomBoxy(
+      delegate: MyBoxyDelegate(),
+      children: [
+        Text(
+          'Hello, World!',
+          style: Theme.of(context).textTheme.headline4,
+        ),
+      ],
     );
+  }
+}
+
+class MyBoxyDelegate extends BoxyDelegate {
+  @override
+  Size layout() {
+    final firstChild = children.first;
+    return firstChild.layout(constraints);
   }
 }
 ''';
