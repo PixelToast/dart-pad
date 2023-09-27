@@ -14,11 +14,4 @@ build/
 # Python generated files
 *.pyc
 
-# Third-party python files.
-web/mdetect.py
-
-web/scripts/codemirror.js
-
-last_prod/
-
 .idea/
